@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), "Inter", sans-serif;
+  --font-display: var(--font-bricolage), "Bricolage Grotesque", sans-serif;
+  --font-switzer: "Switzer", sans-serif;
+  
+  --color-primary: #FF6B00;
+  --color-primary-hover: #E66000;
+  --color-secondary: #00B65C;
+  
+  --color-bg-warm: #FFF9F3;
+  --color-bg-light: #FFFFFF;
+  --color-text-main: #232323;
+  --color-text-muted: #595959;
+}
+
+body {
+  background-color: var(--color-bg-warm);
+  color: var(--color-text-main);
+}
