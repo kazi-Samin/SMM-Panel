@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       <head>
         <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet" />
       </head>
-      <body className={`${inter.variable} ${bricolage.variable} font-sans antialiased bg-[#FFF9F3] text-[#232323]`}>
+      <body className={`${inter.variable} ${bricolage.variable} font-sans antialiased bg-[#FFF9F3] text-[#232323] overflow-x-hidden`}>
         {children}
       </body>
     </html>
