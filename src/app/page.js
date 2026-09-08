@@ -8,6 +8,7 @@ import GrowthTimeline from "@/components/sections/GrowthTimeline";
 import Advantages from "@/components/sections/Advantages";
 import FAQ from "@/components/sections/FAQ";
 import CTABanner from "@/components/sections/CTABanner";
+import FacebookMarketing from "@/components/sections/FacebookMarketing";
 import Footer from "@/components/sections/Footer";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <Statistics />
       <Services />
+      <FacebookMarketing />
       <GrowthProcess />
       <PaymentMethods />
       <GrowthTimeline />
