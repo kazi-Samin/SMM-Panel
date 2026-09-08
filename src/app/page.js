@@ -3,6 +3,8 @@ import Hero from "@/components/sections/Hero";
 import Statistics from "@/components/sections/Statistics";
 import Services from "@/components/sections/Services";
 import FacebookMarketing from "@/components/sections/FacebookMarketing";
+import GrowthProcess from "@/components/sections/GrowthProcess";
+import PaymentMethods from "@/components/sections/PaymentMethods";
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <Statistics />
       <Services />
       <FacebookMarketing />
+      <GrowthProcess />
+      <PaymentMethods />
     </main>
   );
 }
