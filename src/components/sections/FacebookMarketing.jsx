@@ -37,17 +37,12 @@ const facebookFeatures = [
 export default function FacebookMarketing() {
   return (
     <section className="w-full bg-white pb-24 md:pb-32 mt-12 relative">
-      {/* Floating FB Icon - Absolute positioned */}
-      <div className="hidden lg:block absolute left-[-40px] top-[40%] w-[180px] h-[180px] z-20 pointer-events-none">
-        <img src="/images/services/fb-floating.png" alt="Facebook Floating" className="w-full h-full object-contain" />
-      </div>
-
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 xl:px-[120px]">
         <div className="bg-white rounded-[24px] p-8 md:p-12 border border-[#FF914D] flex flex-col lg:flex-row gap-12 lg:gap-16 relative z-10 shadow-sm">
           
           {/* Left Column - Image */}
           <div className="w-full lg:w-5/12 flex items-center justify-center bg-[#FFF9F3] rounded-[16px] overflow-hidden min-h-[400px]">
-             <img src="/images/services/fb-rocket.png" alt="Facebook Marketing" className="w-full h-full object-cover" />
+             <img src="/images/services/fb-rocket.jpg" alt="Facebook Marketing" className="w-full h-full object-cover" />
           </div>
 
           {/* Right Column - Content */}
@@ -59,13 +54,16 @@ export default function FacebookMarketing() {
               Boost your brand visibility, connect with your ideal audience, and drive more traffic, engagement, and sales through strategic Facebook marketing campaigns.
             </p>
 
-            <div className="flex flex-col gap-4 mb-8">
+            <div className="flex flex-col gap-5 mb-8">
               {facebookFeatures.map((feature, idx) => (
                 <div key={idx} className="flex gap-3 items-start group">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#E5783A] text-white font-inter font-bold text-[13px] flex items-center justify-center mt-1">
+                  <div 
+                    className="flex-shrink-0 w-8 h-8 bg-[#E5783A] text-white font-inter font-bold text-[12px] flex items-center justify-center mt-1 shadow-sm"
+                    style={{ clipPath: "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)" }}
+                  >
                     {feature.number}
                   </div>
-                  <p className="font-inter text-[14px] leading-[1.6] text-text-muted pt-1">
+                  <p className="font-inter text-[14px] leading-[1.6] text-text-muted pt-1.5">
                     <strong className="font-semibold text-[#E5783A]">{feature.title}</strong> {feature.desc}
                   </p>
                 </div>
