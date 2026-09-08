@@ -30,23 +30,24 @@ export default function Header() {
     <header 
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled ? "bg-white/80 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"
+        isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"
       )}
     >
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 xl:px-[120px] flex items-center justify-between">
+        
         {/* Logo */}
-        <Link href="/" className="font-inter font-bold text-xl text-primary flex items-center gap-2">
+        <Link href="/" className="font-inter font-bold text-[18px] text-primary flex items-center justify-center bg-white rounded-xl shadow-sm border border-gray-100 px-6 py-3 min-w-[120px]">
           LOGO
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center justify-center gap-8 flex-1">
           {navLinks.map((link) => (
             <Link 
               key={link.name} 
               href={link.href}
               className={cn(
-                "font-inter text-base transition-colors hover:text-primary",
+                "font-inter text-[16px] transition-colors hover:text-primary",
                 link.active ? "text-primary font-bold" : "text-[#393939] font-medium"
               )}
             >
@@ -55,19 +56,13 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Auth Buttons */}
-        <div className="hidden lg:flex items-center gap-4">
+        {/* Auth Button */}
+        <div className="hidden lg:flex items-center">
           <Link 
             href="/signin" 
-            className="font-inter font-semibold text-primary px-4 py-2 hover:bg-orange-50 rounded-lg transition-colors"
+            className="font-inter font-semibold text-primary px-8 py-3 rounded-xl border border-primary hover:bg-orange-50 transition-colors"
           >
             Sign In
-          </Link>
-          <Link 
-            href="/signup" 
-            className="font-inter font-semibold text-white bg-primary hover:bg-primary-hover px-6 py-3 rounded-full transition-colors"
-          >
-            Sign Up
           </Link>
         </div>
 
@@ -102,12 +97,6 @@ export default function Header() {
               className="font-inter font-semibold text-primary text-center py-3 border border-primary rounded-lg"
             >
               Sign In
-            </Link>
-            <Link 
-              href="/signup" 
-              className="font-inter font-semibold text-white bg-primary text-center py-3 rounded-full"
-            >
-              Sign Up
             </Link>
           </div>
         </div>
