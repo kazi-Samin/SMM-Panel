@@ -32,7 +32,7 @@ const socialPlatforms = [
 
 export default function Services() {
   return (
-    <section id="services" className="w-full bg-white py-24 md:py-32">
+    <section id="services" className="w-full bg-white pt-24 md:pt-32 pb-8 md:pb-12">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 xl:px-[120px]">
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-16">

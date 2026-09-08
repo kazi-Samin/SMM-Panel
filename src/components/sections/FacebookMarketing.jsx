@@ -36,9 +36,16 @@ const facebookFeatures = [
 
 export default function FacebookMarketing() {
   return (
-    <section className="w-full bg-white pb-24 md:pb-32 mt-12 relative">
+    <section className="w-full bg-white pb-24 md:pb-32 relative overflow-visible">
+      {/* Huge floating FB icon watermark */}
+      <div className="hidden 2xl:flex absolute left-[-100px] top-[10%] w-[250px] h-[250px] z-20 opacity-90 pointer-events-none items-center justify-center rotate-[-15deg]">
+        <svg viewBox="0 0 24 24" fill="#1877F2" xmlns="http://www.w3.org/2000/svg" className="w-full h-full drop-shadow-2xl">
+          <path d="M24 12.073C24 5.405 18.627 0 12 0C5.373 0 0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.408c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+        </svg>
+      </div>
+
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 xl:px-[120px]">
-        <div className="bg-white rounded-[24px] p-8 md:p-12 border border-[#FF914D] flex flex-col lg:flex-row gap-12 lg:gap-16 relative z-10 shadow-sm">
+        <div className="bg-white rounded-[24px] p-8 md:p-12 border border-orange-200 flex flex-col lg:flex-row gap-12 lg:gap-16 relative z-10 shadow-[0_10px_40px_rgba(0,0,0,0.04)]">
           
           {/* Left Column - Image */}
           <div className="w-full lg:w-5/12 flex items-center justify-center bg-[#FFF9F3] rounded-[16px] overflow-hidden min-h-[400px]">

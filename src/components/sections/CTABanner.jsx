@@ -4,11 +4,11 @@ import Link from 'next/link';
 
 export default function CTABanner() {
   return (
-    <section className="w-full bg-white pb-24 md:pb-32 px-6 md:px-12 xl:px-[120px]">
-      <div className="max-w-[1440px] mx-auto relative rounded-[32px] overflow-hidden bg-gradient-to-br from-[#FFF5F0] to-[#FFF9F3] border border-orange-50 pt-16 md:pt-20 px-8 md:px-16 flex flex-col md:flex-row items-center justify-between shadow-sm">
+    <section className="w-full bg-white pt-24 pb-24 md:pb-32 px-6 md:px-12 xl:px-[120px] overflow-visible">
+      <div className="max-w-[1440px] mx-auto relative rounded-[32px] bg-gradient-to-br from-[#FFF5F0] to-[#FFF9F3] border border-orange-50 pt-16 md:pt-20 px-8 md:px-16 flex flex-col md:flex-row items-center justify-between shadow-sm">
         
         {/* Background Map Map pattern */}
-        <div className="absolute inset-0 z-0 opacity-40 pointer-events-none mix-blend-multiply flex justify-center items-center">
+        <div className="absolute inset-0 z-0 opacity-40 pointer-events-none mix-blend-multiply flex justify-center items-center overflow-hidden rounded-[32px]">
           <Image 
             src="/images/cta/map.png"
             alt="World Map"
@@ -45,7 +45,7 @@ export default function CTABanner() {
 
         {/* Right side girl image */}
         <div className="w-full md:w-[40%] lg:w-[50%] flex justify-end relative z-10 mt-8 md:mt-0">
-          <div className="relative w-full max-w-[400px] h-[400px] md:h-[450px] lg:h-[500px]">
+          <div className="relative w-full max-w-[400px] h-[450px] md:h-[500px] lg:h-[550px] md:mt-[-120px] lg:mt-[-150px]">
             <Image 
               src="/images/cta/cta-girl.png"
               alt="Ready to grow"
